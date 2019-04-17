@@ -10,10 +10,14 @@
     <!--  <context:property-placeholder location="classpath:/database.properties" />
     <context:component-scan base-package="com.foo" /> -->
 
+   <bean id="myFortuneService"
+         class="com.slnst.springdemo.HappyFortune">
+   </bean>
    <bean id="myCoach"
          class="com.slnst.springdemo.CricketCoach">
-   
+   <constructor-arg ref="myFortuneService"/>
    </bean>
+   
 
 
    <!--   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
