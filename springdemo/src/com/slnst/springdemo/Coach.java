@@ -1,4 +1,4 @@
-package com.slsnst.springdemo;
+package com.slnst.springdemo;
 
 public interface Coach {
 
